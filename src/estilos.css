@@ -1,0 +1,529 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: #090909;
+  color: #dddddd;
+}
+
+.navbar {
+  background-color: #090909;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  text-align: center;
+}
+
+.navbar-nav {
+  display: flex;
+  padding-left: 100px;
+  padding-right: 420px;
+}
+
+.navbar .container {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #edcc36;
+}
+
+.navbar .navbar-brand img {
+  height: 45px;
+  width: auto;
+  position: relative;
+  top: -4px;
+}
+.navbar-nav li a {
+  font-family: "Roboto", sans-serif; /* Cambia a la fuente que prefieras */
+  font-size: 16px; /* Ajusta el tamaño de la fuente */
+  color: #ffffff; /* Cambia el color del texto */
+  text-transform: uppercase; /* Convierte el texto a mayúsculas */
+  text-decoration: none; /* Elimina el subrayado */
+  padding: 10px 15px; /* Espaciado dentro de cada enlace */
+  transition: color 0.3s ease; /* Efecto suave para hover */
+}
+
+.navbar-nav li a:hover {
+  color: #edcc36; /* Cambia el color al pasar el ratón */
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+
+  align-items: center;
+}
+.logo h1 {
+  color: #fff;
+}
+
+.navbar-nav li {
+  margin-right: 20px; /* Ajusta el espacio entre los elementos */
+}
+
+.cta-button {
+  background-color: #edcc36; /* Botón amarillo */
+  color: #000; /* Texto negro */
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.content {
+  display: flex;
+  padding: 100px 20px; /* Ajuste de padding */
+  background-color: #090909; /* Color de fondo */
+  color: white;
+  margin-top: 80px; /* Para evitar superposición con el nav */
+}
+
+.intro span {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: block;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #edcc36;
+  text-align: left;
+}
+
+.intro .row {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.content-text {
+  max-width: 500px;
+}
+
+.content .col-md h1 {
+  font-size: 56px;
+  line-height: 65px;
+  font-weight: 700;
+  position: relative;
+  font-family: "Heebo", sans-serif;
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: left;
+  padding-bottom: 50px;
+}
+
+.entry {
+  margin-right: 500px;
+}
+
+.cta-button:hover {
+  background-color: #e64a19;
+}
+
+/* Ajustes de la imagen */
+.content-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Opcional para darle un toque más moderno */
+}
+
+.intro .col-md {
+  flex: 1;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .content-image {
+    margin-top: 20px;
+  }
+}
+/* Servicios */
+.container2 {
+  max-width: 1400px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.services {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.services h2 {
+  position: relative; /* Habilitar coordenadas relativas */
+  z-index: 2; /* Asegurar que quede sobre el divider */
+  display: inline-block;
+  background: #090909; /* Fondo para sobresalir sobre el divider */
+  padding: 0 10px; /* Añade espacio lateral */
+  margin: 0 auto;
+  top: -55px;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 55px;
+}
+.services .row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.service {
+  max-width: 300px;
+  margin: 20px 0;
+}
+.col-md-2 {
+  flex: 0 0 32%;
+}
+.col-md-2 img {
+  width: 80%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.services .divider {
+  height: 5px;
+  width: 100%;
+  background: #edcc36;
+  position: relative;
+  top: -84px;
+  z-index: 1;
+}
+
+.services .col-md {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Sección de Planes */
+.planes {
+  padding-top: 100px;
+}
+
+.planes .content2 {
+  padding: 40px;
+  border: 2px solid #edcc36;
+}
+
+.container3 {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* Espacio entre columnas */
+  align-items: flex-start;
+  gap: 2rem; /* Espacio entre cajas */
+  padding: 4rem 2rem; /* Espaciado interno */
+}
+
+.col-md-left {
+  flex: 1;
+  padding-right: 3rem;
+}
+
+.col-md-left h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-align: left;
+  line-height: 74px;
+}
+
+.col-md-left p {
+  margin: 5px 0 5px;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
+.content2 {
+  background-color: transparent;
+  padding: 2rem;
+  min-height: 500px; /* Altura mínima para las cajas */
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.content2 h2 {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 55px;
+  margin-bottom: 20px;
+  text-align: left;
+  padding-top: 60px;
+}
+
+.content2 h4 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-family: "Heebo", sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.content2 p {
+  margin: 5px 0 15px;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+}
+
+.content2 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.content2 ul li {
+  display: flex; /* Para alinear el ícono y el texto */
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem; /* Ajusta el tamaño del texto */
+  padding: 8px 0;
+  color: #ffffff; /* Color del texto */
+  position: relative; /* Para que el ::before se posicione correctamente */
+}
+
+.content2 ul li::before {
+  content: "✔"; /* Check dentro del círculo */
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%; /* Hace que sea un círculo */
+  background-color: #edcc36; /* Color del fondo del círculo */
+  color: #000; /* Color del check */
+  font-size: 1rem; /* Tamaño del check */
+  font-weight: bold; /* Peso del check */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem; /* Espaciado entre el ícono y el texto */
+}
+
+.content2 ul li i {
+  font-style: normal;
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+/* Precio */
+.content2 h4 + p + ul + p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1.5rem 0;
+}
+
+/* Botones */
+.content2 button {
+  background-color: #edcc36; /* Botón amarillo */
+  color: #000; /* Texto negro */
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.content2 button:hover {
+  background-color: #e5b416; /* Botón más oscuro al pasar el ratón */
+}
+
+/* Sección de Contactanos */
+.contact {
+  padding-top: 120px;
+}
+
+.container4 {
+  max-width: 1320px;
+
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.contact .content-map {
+  margin-bottom: 40px;
+}
+
+.contact .content-map iframe {
+  width: 100%;
+}
+
+.contact .row {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.contact .col {
+  display: flex;
+}
+
+.contact .col-md {
+  flex: 1 0 0%;
+  padding: 20px;
+}
+
+.contact .col-md h2 {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 55px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.contact .col-md p {
+  margin: 5px 0 15px;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  font-size: 18px;
+}
+
+.contact .icon {
+  width: 50px;
+  height: 50px;
+  background-color: #edcc36;
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  font-size: 24px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact .text h5 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  text-align: left;
+  font-family: "Heebo", sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.contact .text span {
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "Heebo", sans-serif;
+}
+
+/* Ajustes generales */
+
+.contact .open {
+  display: flex;
+  flex-direction: column;
+  background-color: #edcc36;
+  padding: 20px;
+  border: 2px solid #000; /* Bordes iguales */
+  text-align: center;
+  color: #000;
+  height: 100%;
+  justify-content: center;
+}
+
+.contact .open h3 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  font-family: "Heebo", sans-serif;
+  text-transform: uppercase;
+}
+
+.contact .open span {
+  font-size: 22px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+/* Sección de Testimonios */
+
+.testimonials {
+  padding: 100px 20px;
+  background: #f8f8f8; /* Fondo claro */
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 50px;
+}
+
+.testimonial-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.testimonial {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  padding: 30px 20px;
+  text-align: center; /* Centra el contenido */
+  font-size: 1.1rem;
+  font-style: italic; /* Estilo de cita */
+  color: #666;
+}
+
+.testimonial h4 {
+  margin-top: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #edcc36; /* Resaltar el nombre */
+}
+
+@media (max-width: 768px) {
+  .testimonial-list {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .testimonial {
+    max-width: 100%; /* Las tarjetas ocupan todo el ancho */
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: #edcc36;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
